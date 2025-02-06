@@ -1,0 +1,132 @@
+:root {
+    --base-font-size: 16px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("images/prog.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+    font-size: var(--base-font-size);
+}
+
+header {
+    background-color: rgba(0, 105, 92, 0.8); /* Semi-transparent header */
+    color: white;
+    padding: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 1em; 
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em; /* Relative to base font size */
+}
+
+.social-icons {
+    display: flex;
+    gap: 0.5em; /* Use em units for better scaling */
+ 
+
+}
+.social-icons a {
+    color: white;
+    font-size: 3em; /* Relative to base font size */
+    
+}
+
+main {
+    flex-grow: 1;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.profile {
+    display: flex;
+    align-items: flex-start;
+    gap: 2em;
+    max-width: 90%; /* Increased max-width for better scaling */
+    background: rgba(255, 255, 255, 0.815);
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile h2 {  /* Target h2 specifically within .profile */
+    font-size: 3em; /* Increased font size */
+    margin-bottom: 1em;
+}
+
+.profile p {  /* Target p specifically within .profile */
+    font-size: 2em; /* Increased font size */
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+.profile-image {
+    flex: 0 0 20vw; /* Use viewport width for responsiveness */
+    margin-right: 1em; /* Use em units for better scaling */
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #00695c;
+}
+
+.profile-text {
+    flex: 1;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em; /* Use em units for better scaling */
+}
+
+p {
+    margin-bottom: 0.5em; /* Use em units for better scaling */
+    line-height: 1.5; /* Improve readability */
+}
+
+footer {
+    background-color: #00695c;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+/* Media Query for Responsiveness (adjust breakpoints as needed) */
+@media (max-width: 992px) { /* Adjust breakpoint for better responsiveness */
+    .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-image {
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
