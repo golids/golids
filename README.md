@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @golids
 - 👀 I’m interested learning programming in github.
-- 🌱 I’m currently learning Javascript right now.
+- 🌱 I’m currently learning HTML & CSS right now.
 - 💞️ I’m looking to collaborate on... (not yet decided)
 - 📫 How to reach me? Just email me in my secondary email rebucasgoldae@gmail.com
 - 😄 Pronouns: (up to you, but I like to be referred as she/her)
